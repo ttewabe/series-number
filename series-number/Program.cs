@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MyNumber
 {
@@ -7,18 +7,24 @@ namespace MyNumber
         static void Main(string[] args)
         {
 
-            for(int i=5; i>=1; i--)
-            {
-                int x = i * 2;
-                int y = i * 3;
+            string address, city, state;
 
-                for(int j = 1; j<x; j++)
-                {
-                    Console.Write(j);
-                }
-                Console.WriteLine();
+            Console.Write("Enter a address: ");
+            address = Console.ReadLine();
 
-            }
+            Console.Write("Enter a city: ");
+            city = Console.ReadLine();
+
+            Console.Write("Enter a state: ");
+            state = Console.ReadLine();
+
+            Console.Write("He lives in " + address + ", ");
+            Console.Write("The city of " + city + ", ");
+            Console.Write("in the state of " + state + " USA.");
+
+            Console.Read();
+
+
 
         }
     }
